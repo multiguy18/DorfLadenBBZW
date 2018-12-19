@@ -67,6 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="img\appenzeller.jpg" />
+    <Content Include="img\eier.jpg" />
+    <Content Include="img\icedtea.jpg" />
+    <Content Include="img\kalbsbratwuerste.jpg" />
+    <Content Include="img\krustenkranz.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\nektarinen.jpg" />
+    <Content Include="img\olivenoel.jpg" />
+    <Content Include="img\senf.jpg" />
+    <Content Include="img\tomaten.jpg" />
+    <Content Include="img\vanille_glace.jpg" />
     <Content Include="pages\Overview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -81,6 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\products.csv" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,0 +1,20 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(white, white, white, #f65725);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+    width: 80%;
+}
+
+.description {
+    color: #d63720;
+}
