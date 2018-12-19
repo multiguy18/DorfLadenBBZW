@@ -67,15 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\Overview.aspx" />
+    <Content Include="pages\Overview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\Overview.aspx.cs">
+    <Compile Include="pages\Overview.aspx.cs">
       <DependentUpon>Overview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Overview.aspx.designer.cs">
+    <Compile Include="pages\Overview.aspx.designer.cs">
       <DependentUpon>Overview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
