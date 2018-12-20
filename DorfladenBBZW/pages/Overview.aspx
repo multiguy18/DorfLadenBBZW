@@ -12,5 +12,12 @@
     <img class="logo" alt="Dorfladen-BBZW" src="../img/logo.png" />
     <br />
     <h2 class="description">Aktionen</h2>
+    <asp:Repeater runat="server" ID="overviewContent">
+        <ItemTemplate>
+            <div>
+                <asp:Label runat="server" ID="lblID" Text='<%# Eval("Id") %>' />
+            </div>
+        </ItemTemplate>
+    </asp:Repeater>
 </body>
 </html>
