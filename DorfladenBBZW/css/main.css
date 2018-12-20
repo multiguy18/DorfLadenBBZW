@@ -18,3 +18,8 @@
 .description {
     color: #d63720;
 }
+
+.products-sidebyside {
+    float: left;
+    margin: 20px;
+}

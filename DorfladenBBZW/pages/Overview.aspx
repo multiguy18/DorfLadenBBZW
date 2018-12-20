@@ -14,7 +14,7 @@
     <h2 class="description">Aktionen</h2>
     <asp:Repeater runat="server" ID="overviewContent">
         <ItemTemplate>
-            <div>
+            <div class="products-sidebyside">
                 <asp:Label runat="server" ID="lblID" Text='<%# Eval("Id") %>' />
             </div>
         </ItemTemplate>
