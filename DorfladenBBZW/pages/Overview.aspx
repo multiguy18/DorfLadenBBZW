@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Übersicht - Dorfladen</title>
-    <link rel="stylesheet" href="../css/main.css"
+    <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
     <img class="logo" alt="Dorfladen-BBZW" src="../img/logo.png" />
