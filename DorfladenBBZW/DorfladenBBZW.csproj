@@ -79,10 +79,26 @@
     <Content Include="img\senf.jpg" />
     <Content Include="img\tomaten.jpg" />
     <Content Include="img\vanille_glace.jpg" />
+    <Content Include="pages\Basket.aspx" />
+    <Content Include="pages\Details.aspx" />
     <Content Include="pages\Overview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\Basket.aspx.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Basket.aspx.designer.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\Overview.aspx.cs">
       <DependentUpon>Overview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
