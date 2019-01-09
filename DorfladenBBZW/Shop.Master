@@ -5,16 +5,14 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <title>Dorfladen</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <asp:ContentPlaceHolder ID="HeadPlaceholder" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+    <img class="logo" alt="Dorfladen-BBZW" src="../img/logo.png" />
+    <asp:ContentPlaceHolder ID="ContentPlaceholder" runat="server">
+    </asp:ContentPlaceHolder>
 </body>
 </html>
