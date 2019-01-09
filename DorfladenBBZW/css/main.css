@@ -16,10 +16,19 @@
 }
 
 .description {
-    color: #d63720;
+    color: #d66720;
 }
 
 .products-sidebyside {
     float: left;
     margin: 20px;
+}
+
+.link-no-deco {
+    text-decoration: none;
+    color: inherit;
+}
+
+.overview-margin {
+    margin-bottom: 1200px;
 }

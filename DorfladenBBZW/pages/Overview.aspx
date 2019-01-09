@@ -4,11 +4,19 @@
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder">
     <h2 class="description">Aktionen</h2>
-    <asp:Repeater runat="server" ID="overviewContent">
-        <ItemTemplate>
-            <div class="products-sidebyside">
-                <asp:Label runat="server" ID="lblID" Text='<%# Eval("Id") %>' />
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
+    <div class="overview-margin">
+        <asp:Repeater runat="server" ID="overviewContent">
+            <ItemTemplate>
+                <a href='<%# string.Format("Details.aspx?id={0}", Eval("id")) %>' class="link-no-deco">
+                    <div class="products-sidebyside">
+                        <asp:Image ImageUrl='<%# string.Format("~/img/{0}", Eval("ImageName")) %>' Height="300px" runat="server"/>
+                        <br />
+                        <asp:Label Text='<%# Eval("Name") %>' runat="server" CssClass="description" />
+                        <br />
+                        <asp:Label Text='<%# string.Format("CHF {0}", Convert.ToDecimal(Eval("SpecialOffer")).ToString("0.00")) %>' runat="server" CssClass="description" />
+                    </div>
+                </a>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
 </asp:Content>
