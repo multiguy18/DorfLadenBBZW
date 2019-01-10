@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Overview.aspx.cs" Inherits="DorfladenBBZW.Pages.Overview" MasterPageFile="~/Shop.Master" %>
+<%@ Import Namespace="DorfladenBBZW.TypeExtensions" %>
 <asp:Content runat="server" ContentPlaceHolderID="HeadPlaceholder">
 
 </asp:Content>
@@ -7,14 +8,14 @@
     <div class="overview-margin">
         <asp:Repeater runat="server" ID="overviewContent">
             <ItemTemplate>
-                <a href='<%# string.Format("Details.aspx?id={0}", Eval("Id")) %>' class="link-no-deco">
+                <a href='<%# Response.ApplyAppPathModifier(string.Format("Details.aspx?id={0}", Eval("Id"))) %>' class="link-no-deco">
                     <div class="products-sidebyside">
                         <asp:Image ImageUrl='<%# string.Format("~/img/{0}", Eval("ImageName")) %>' Height="300px" runat="server"/>
                         <br />
                         <asp:Label Text='<%# Eval("Name") %>' runat="server" CssClass="description" />
                         <br />
-                        <asp:Label Text='<%# string.Format("CHF {0}", Convert.ToDecimal(Eval("SpecialOffer")).ToString("0.00")) %>' runat="server" CssClass="description" />
-                        <asp:Label Text='<%# string.Format("CHF {0}", Convert.ToDecimal(Eval("OriginalPrice")).ToString("0.00")) %>' runat="server" CssClass="price-margin-left old-price" />
+                        <asp:Label Text='<%# Eval("SpecialOffer").EvalToDecimalFormat() %>' runat="server" CssClass="description" />
+                        <asp:Label Text='<%# Eval("OriginalPrice").EvalToDecimalFormat() %>' runat="server" CssClass="price-margin-left old-price" />
                     </div>
                 </a>
             </ItemTemplate>

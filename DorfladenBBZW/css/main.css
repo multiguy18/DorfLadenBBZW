@@ -4,6 +4,7 @@
     background-image: linear-gradient(white, white, white, #f65725);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-
 }
 
 .logo {
@@ -30,7 +31,6 @@
 }
 
 .overview-margin {
-    margin-bottom: 1200px;
 }
 
 .price-margin-left {
@@ -40,4 +40,14 @@
 .old-price {
     text-decoration: line-through;
     color: red;
+}
+
+.image-float-left {
+    float: left;
+}
+
+.productTitle {
+    color: #d66720;
+    font-size: 30px;
+    font-weight: bold;
 }

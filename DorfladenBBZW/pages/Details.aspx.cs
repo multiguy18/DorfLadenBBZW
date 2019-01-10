@@ -11,10 +11,20 @@ namespace DorfladenBBZW.pages
 {
     public partial class Details : System.Web.UI.Page
     {
+        public Product CurrentProduct { get; private set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ProductsPersistency prodPersis = new ProductsPersistency();
-            Product products = prodPersis.GetById(Request.Params.Get("id"));
+
+            string idParam = Request.Params.Get("id");
+            if (!string.IsNullOrEmpty(idParam))
+            {
+                CurrentProduct = prodPersis.GetById(idParam);
+                productImage.ImageUrl = "~/img/" + CurrentProduct.ImageName;
+                productName.Text = CurrentProduct.Name;
+            }
         }
+
     }
 }

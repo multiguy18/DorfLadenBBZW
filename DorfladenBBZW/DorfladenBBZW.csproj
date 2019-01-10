@@ -120,6 +120,7 @@
     </Compile>
     <Compile Include="Transformers\FileContentToItemsTransformer.cs" />
     <Compile Include="Transformers\LineToProductTransformer.cs" />
+    <Compile Include="TypeExtensions\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\products.csv" />
