@@ -32,3 +32,12 @@
 .overview-margin {
     margin-bottom: 1200px;
 }
+
+.price-margin-left {
+    margin-left: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DorfladenBBZW.Models;
+using DorfladenBBZW.Persistency;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,8 @@ namespace DorfladenBBZW.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ProductsPersistency prodPersis = new ProductsPersistency();
+            Product products = prodPersis.GetById(Request.Params.Get("id"));
         }
     }
 }
